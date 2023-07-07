@@ -1,0 +1,110 @@
+/* Contenedor principal*/
+.app {
+  text-align: center;
+  box-shadow: 20px 20px 10px -3px #00000040;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+/* Display*/
+.display {
+  text-align: right;
+  height: 100px;
+  width: 242px;
+  padding: 20px;
+  background: #1F1C2C;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #928DAB, #1F1C2C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 24px;
+  font-family: 'Rajdhani', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+}
+
+
+/* Botonera*/
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 280px;
+  margin: auto;
+  overflow: hidden;
+
+
+
+}
+
+/*Propiedad de los botones*/
+button {
+  border: 1px solid transparent;
+  height: 70px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #4a4e69;
+
+
+}
+
+button:hover {
+  background-color: #22223b;
+  border-color: #646cff;
+
+}
+
+button:active {
+  transform: scale(1.1);
+
+}
+
+
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/*Propiedades del boton "+"*/
+.special-button {
+  grid-row: span 2;
+  height: auto;
+  background-color: #f28482;
+}
+
+.special-button:hover {
+  border-color: #EF6262;
+  background-color: #FF6666;
+}
+
+/*Propiedades de operadores*/
+.operators-button {
+  background-color: #f28482;
+  color: white;
+}
+
+.operators-button:hover {
+  border-color: #EF6262;
+  background-color: #FF6666;
+}
+
+/*Propiedades del boton "="*/
+.equal-button {
+  width: 70px;
+}
