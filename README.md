@@ -1,4 +1,4 @@
-# calculator.github.io
+# Calculator
 Calculadora con estilo minimalista hecha en JavaScript 
 
 El live de la app : https://emanueliniguez.github.io/calculator.github.io/
